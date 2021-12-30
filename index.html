@@ -27,9 +27,13 @@
         />
       </div>
 
-      <picture class="hero-image">
+      <picture class="hero">
         <source srcset="./images/hero-desktop.jpg" media="(min-width: 376px)" />
-        <img src="./images/hero-mobile.jpg" alt="a woman in orange shirt" />
+        <img
+          class="hero-image"
+          src="./images/hero-mobile.jpg"
+          alt="a woman in orange shirt"
+        />
       </picture>
 
       <section class="section">
@@ -42,20 +46,35 @@
           launch deals.
         </p>
         <form class="input-block" action="" method="post">
-          <input
-            class="input-block__text"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <button
-            class="input-block__button"
-            type="submit"
-            aria-label="Submit Email"
-          >
-            <img class="input-block__button-icon" src="./images/icon-arrow.svg" alt="" aria-hidden="true" />
-          </button>
+          <div class="input-block__interactive">
+            <input
+              class="input-block__text-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="circle with an exclamation mark"
+              class="input-block__warning"
+            />
+            <button
+              class="input-block__button"
+              type="submit"
+              aria-label="Submit Email"
+            >
+              <img
+                class="input-block__button-icon"
+                src="./images/icon-arrow.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+          </div>
+          <p class="input-block__notification js-error-message">
+            Some error message
+          </p>
         </form>
       </section>
     </main>
