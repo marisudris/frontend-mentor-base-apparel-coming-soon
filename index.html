@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title hidden">Base Apparel</h1>
+    </header>
+
+    <main class="main">
+      <div class="logo-section">
+        <img
+          class="logo"
+          src="./images/logo.svg"
+          alt="A circle with 'base apparel' text next to it"
+        />
+      </div>
+
+      <picture class="hero-image">
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 376px)" />
+        <img src="./images/hero-mobile.jpg" alt="a woman in orange shirt" />
+      </picture>
+
+      <section class="section">
+        <h2 class="section__title">
+          <span class="title-accent">We're</span> coming soon
+        </h2>
+        <p class="section__prose">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="input-block" action="" method="post">
+          <input
+            class="input-block__text"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <button
+            class="input-block__button"
+            type="submit"
+            aria-label="Submit Email"
+          >
+            <img class="input-block__button-icon" src="./images/icon-arrow.svg" alt="" aria-hidden="true" />
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer hidden">
+      <p class="attribution">
+        Challenge by
+        <a
+          class="attribution __link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
