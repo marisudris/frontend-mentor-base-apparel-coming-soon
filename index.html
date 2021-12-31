@@ -45,10 +45,10 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form class="input-block" action="" method="post">
-          <div class="input-block__interactive">
+        <form class="input-block js-form" action="" method="post" novalidate>
+          <div class="input-block__elements js-input-block">
             <input
-              class="input-block__text-input"
+              class="input-block__text-input js-input"
               type="email"
               name="email"
               id="email"
@@ -57,10 +57,12 @@
             <img
               src="./images/icon-error.svg"
               alt="circle with an exclamation mark"
-              class="input-block__warning"
+              class="input-block__warning js-warning"
+              hidden
             />
             <button
               class="input-block__button"
+              name="sumbit"
               type="submit"
               aria-label="Submit Email"
             >
@@ -72,8 +74,8 @@
               />
             </button>
           </div>
-          <p class="input-block__notification js-error-message">
-            Some error message
+          <p class="input-block__notification js-notification" hidden>
+            Please provide a valid email
           </p>
         </form>
       </section>
@@ -90,5 +92,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

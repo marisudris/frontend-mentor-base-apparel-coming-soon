@@ -35,7 +35,7 @@ body {
   --grd-focus: linear-gradient(135deg, hsl(0, 82%, 94%), hsl(0, 93%, 88%));
 
   font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .main {
@@ -70,8 +70,8 @@ body {
 
 @media (min-width: 600px) {
   .logo-section {
-    padding: 4.125em 2em 2em;
-    margin-left: 11vw;
+    padding: 4.125em 2em 5em;
+    margin-left: 9vw;
   }
 
   .logo {
@@ -87,9 +87,9 @@ body {
 
 @media (min-width: 600px) {
   .section {
-    width: 27.875em;
+    width: 30.75em;
     padding-top: 0;
-    margin-left: 11vw;
+    margin-left: 9vw;
     background: none;
     text-align: initial;
   }
@@ -106,7 +106,7 @@ body {
 
 @media (min-width: 600px) {
   .section__title {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -118,7 +118,6 @@ body {
 
 .section__prose {
   color: var(--clr-desaturated-red);
-  font-size: 0.875em;
   margin-bottom: 2em;
 }
 
@@ -128,7 +127,7 @@ body {
   }
 }
 
-.input-block__interactive {
+.input-block__elements {
   display: flex;
   height: 3em;
   border: 1px solid var(--clr-desaturated-red);
@@ -137,17 +136,20 @@ body {
 }
 
 @media (min-width: 600px) {
-  .input-block__interactive {
+  .input-block__elements {
     height: 3.5em;
   }
 }
 
-.input-block__interactive:focus-within {
+.input-block__elements:focus-within {
   box-shadow: 0 0 10px -2px var(--clr-soft-red);
 }
 
+.input-block__elements--invalid {
+  border: 1px solid var(--clr-soft-red);
+}
+
 .input-block__text-input {
-  color: var(--clr-desaturated-red);
   flex: 1;
   min-width: 0;
   padding: 1.5em;
@@ -156,6 +158,10 @@ body {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
   outline: transparent;
+}
+
+.input-block__text-input:placeholder-shown {
+  color: var(--clr-desaturated-red);
 }
 
 .input-block__warning {
@@ -188,6 +194,7 @@ body {
 .input-block__button:focus {
   outline: transparent;
   background: var(--grd-focus);
+  box-shadow: 0 15px 20px 0 var(--clr-desaturated-red);
 }
 
 .input-block__button-icon {
